@@ -2,12 +2,8 @@ import React from "react";
 
 import AppnavLogged from "@/components/AppnavLogged";
 import DashboardCard from "@/components/DashboardCard";
-import parseJwt from "../utils/GetUserFromToken";
 
 export default async function Page() {
-  const payloadData = await parseJwt();
-  console.log(payloadData);
-
   return (
     <>
       <AppnavLogged />
