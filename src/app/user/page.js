@@ -6,13 +6,13 @@ async function GetData() {
 }
 
 import React from "react";
-import AppNavBar from "@/app/component/AppNavBar";
+import AppnavLogged from "@/components/AppnavLogged";
 
 const Page = async () => {
   const x = await GetData();
   return (
     <div>
-      <AppNavBar />
+      <AppnavLogged />
       <div className="mt-20">{x}</div>
     </div>
   );
